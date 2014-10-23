@@ -2,7 +2,7 @@
 <manifest>
 
   <remote name="flingone"
-          fetch="git://github.com/flingone/" />
+          fetch="https://github.com/flingone/" />
   <remote name="b2g"
           fetch="git://github.com/mozilla-b2g/" />
   <remote name="apitrace"
@@ -11,6 +11,8 @@
           fetch="git://codeaurora.org/" />
   <remote name="mozillaorg"
           fetch="https://git.mozilla.org/releases" />
+  <remote name="openflint"
+          fetch="https://github.com/openflint/" />
 
   <!-- only have sdk422 now, so stick to android-4.2.2 -->
   <default revision="refs/tags/android-4.2.2_r1"
@@ -19,8 +21,8 @@
 
   <!-- B2G specific things. -->
   <project path="dalvik" name="fake-libdvm" remote="b2g" revision="v2.0" />
-  <project path="gaia" name="gaia" remote="mozillaorg" revision="v2.0" />
-  <project path="gecko" name="gecko" remote="mozillaorg" revision="v2.0" />
+  <project path="gaia" name="gaia" remote="flingone" revision="matchstick-b2g2.0" />
+  <project path="gecko" name="gecko-dev" remote="flingone" revision="matchstick-b2g2.0" />
   <project path="gonk-misc" name="gonk-misc" remote="b2g" revision="v2.0" />
   <project path="rilproxy" name="rilproxy" remote="b2g" revision="v2.0" />
   <project path="external/moztt" name="moztt" remote="b2g" revision="v2.0" />
@@ -129,28 +131,37 @@
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" remote="caf" revision="b2g/jb_mr1_rb2.17"/>
 
   <!-- rk30sdk things -->
-  <project path="build" name="platform_build" remote="flingone" revision="flingone">
+  <project path="build" name="platform_build" remote="flingone" revision="matchstick">
     <copyfile src="core/root.mk" dest="Makefile"/>
   </project>
-  <project path="bootable/recovery" name="bootable-recovery" remote="flingone" revision="flingone"/>
+  <project path="bootable/recovery" name="bootable-recovery" remote="flingone" revision="matchstick"/>
   <project path="device/rockchip/rk30_common" name="device-rockchip-rk30_common" remote="flingone" revision="flingone"/>
-  <project path="device/rockchip/rk30sdk" name="device-rockchip-rk30sdk" remote="flingone" revision="flingone"/>
+  <project path="device/rockchip/rk30sdk" name="device-rockchip-rk30sdk" remote="flingone" revision="matchstick"/>
   <project path="external/alsa-lib" name="external-alsa-lib" remote="flingone" revision="flingone"/>
   <project path="external/alsa-utils" name="external-alsa-utils" remote="flingone" revision="flingone"/>
   <project path="external/bouncycastle" name="external_bouncycastle" remote="flingone" revision="flingone"/>
   <project path="external/mac" name="external-mac" remote="flingone" revision="flingone"/>
   <project path="external/rk-pcba-test" name="external_rk-pcba-test" remote="flingone" revision="flingone"/>
   <project path="external/wlan_loader" name="external_wlan_loader" remote="flingone" revision="flingone"/>
-  <project path="frameworks/av" name="frameworks_av" remote="flingone" revision="flingone"/>
+  <project path="frameworks/av" name="frameworks_av" remote="flingone" revision="matchstick"/>
   <project path="frameworks/native" name="frameworks_native" remote="flingone" revision="flingone"/>
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="flingone" revision="flingone"/>
   <project path="hardware/libhardware_legacy" name="hardware_libhardware-legacy" remote="flingone" revision="flingone"/>
   <project path="hardware/rk29" name="hardware-rk29" remote="flingone" revision="flingone"/>
   <project path="rockdev" name="rockdev" remote="flingone" revision="flingone"/>
   <project path="rkst" name="rkst" remote="flingone" revision="flingone"/>
-  <project path="system/core" name="platform_system_core" remote="flingone" revision="flingone"/>
-  <project path="kernel" name="rk3066-kernel" remote="flingone" revision="master"/>
+  <project path="system/core" name="platform_system_core" remote="flingone" revision="matchstick"/>
+  <project path="kernel" name="rk3066-kernel" remote="flingone" revision="matchstick"/>
   <project path="u-boot" name="rockchip_u-boot" remote="flingone" revision="rockchip"/>
   <project path="patches" name="b2g-patches" remote="flingone" revision="v2.0"/>
+
+  <!-- matchstick projects -->
+  <project path="external/libcurl" name="external_libcurl" remote="flingone" revision="matchstick"/>
+  <project path="frameworks/base/cmds/configd" name="frameworks_base_cmds_configd" remote="flingone" revision="matchstick"/>
+  <project path="frameworks/base/cmds/otad" name="frameworks_base_cmds_otad" remote="flingone" revision="matchstick"/>
+  <project path="frameworks/base/cmds/node" name="node" remote="openflint" revision="matchstick"/>
+  <project path="frameworks/base/cmds/coffeescript" name="coffeescript" remote="openflint" revision="matchstick"/>
+  <project path="frameworks/base/cmds/flingd-coffee" name="flingd-coffee" remote="openflint" revision="master"/>
+  <project path="frameworks/base/cmds/castd-coffee" name="castd-coffee" remote="openflint" revision="master"/>
 
 </manifest>
