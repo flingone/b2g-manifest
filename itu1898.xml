@@ -8,12 +8,13 @@
   <remote fetch="git://github.com/apitrace/" name="apitrace"/>
   <remote fetch="git://codeaurora.org/" name="caf"/>
   <remote fetch="https://git.mozilla.org/releases" name="mozillaorg"/>
+  <remote fetch="https://github.com/openflint/" name="openflint"/>
 
   <default revision="refs/tags/android-4.4.2_r1" remote="caf" sync-j="4"/>
 
   <!-- B2G specific things. -->
-  <project name="gaia" path="gaia" remote="mozillaorg" revision="v2.1"/>
-  <project name="gecko" path="gecko" remote="mozillaorg" revision="v2.1"/>
+  <project name="gaia" path="gaia" remote="flingone" revision="matchstick-b2g2.1"/>
+  <project name="gecko-dev" path="gecko" remote="flingone" revision="matchstick-b2g2.1"/>
   <project name="fake-libdvm" path="dalvik" remote="b2g" revision="v2.1"/>
   <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="v2.1"/>
   <project name="librecovery" path="librecovery" remote="b2g" revision="v2.1"/>
@@ -132,7 +133,7 @@
   <project path="bootable/recovery" name="bootable-recovery" remote="flingone" revision="flingone-kk"/>
   <project path="device/rockchip/rk3066" name="device-rockchip-rk3066" remote="flingone" revision="flingone-kk"/>
   <project path="device/rockchip/rk3188" name="device-rockchip-rk3188" remote="flingone" revision="itu1898"/>
-  <project path="device/rockchip/rksdk" name="device-rockchip-rksdk" remote="flingone" revision="itu1898"/>
+  <project path="device/rockchip/rksdk" name="device-rockchip-rksdk" remote="flingone" revision="itu1898-fling"/>
   <project path="device/rockchip/common" name="device-rockchip-common" remote="flingone" revision="flingone-kk"/>
   <project path="external/alsa-lib" name="external-alsa-lib" remote="flingone" revision="flingone-kk"/>
   <project path="external/alsa-utils" name="external-alsa-utils" remote="flingone" revision="flingone-kk"/>
@@ -150,11 +151,20 @@
   <project path="patches" name="b2g-patches" remote="flingone" revision="v2.1-kk"/>
   <project path="rockdev" name="rockdev" remote="flingone" revision="itu1898" />
   <project path="rkst" name="rkst" remote="flingone" revision="flingone-kk" />
-  <project path="system/core" name="platform_system_core" remote="flingone" revision="flingone-kk"/>
+  <project path="system/core" name="platform_system_core" remote="flingone" revision="matchstick-kk"/>
   <project path="system/displayd" name="system-displayd" remote="flingone" revision="flingone-kk"/>
   <project path="system/vold" name="system_vold" remote="flingone" revision="flingone-kk"/>
   <project path="u-boot" name="rockchip_u-boot" remote="flingone" revision="rockchip"/>
   <!-- add arm-eabi-4.6 for u-boot build. -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6" />
+
+  <!-- matchstick projects -->
+  <project path="external/libcurl" name="external_libcurl" remote="flingone" revision="matchstick-kk"/>
+  <project path="frameworks/base/cmds/configd" name="frameworks_base_cmds_configd" remote="flingone" revision="matchstick-kk"/>
+  <project path="frameworks/base/cmds/otad" name="frameworks_base_cmds_otad" remote="flingone" revision="matchstick-kk"/>
+  <project path="frameworks/base/cmds/scan_wifi" name="frameworks_base_cmds_scan_wifi" remote="flingone" revision="matchstick-kk"/>
+  <project path="frameworks/base/cmds/node" name="node" remote="openflint" revision="matchstick"/>
+  <project path="frameworks/base/cmds/coffeescript" name="coffeescript" remote="openflint" revision="matchstick"/>
+  <project path="frameworks/base/cmds/flingd-coffee" name="flingd-coffee" remote="openflint" revision="master"/>
 
 </manifest>
