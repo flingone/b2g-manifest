@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <manifest>
 
-  <remote fetch="git://github.com/flingone/" name="flingone" />
+  <remote fetch="https://github.com/flingone/" name="flingone" />
   <remote fetch="https://android.googlesource.com/" name="aosp"/>
   <remote fetch="git://github.com/mozilla-b2g/" name="b2g"/>
   <remote fetch="git://github.com/mozilla/" name="mozilla"/>
@@ -16,7 +16,7 @@
   <project name="gaia" path="gaia" remote="flingone" revision="matchstick-b2g2.1"/>
   <project name="gecko-dev" path="gecko" remote="flingone" revision="matchstick-b2g2.1"/>
   <project name="fake-libdvm" path="dalvik" remote="b2g" revision="v2.1"/>
-  <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="v2.1"/>
+  <project name="gonk-misc" path="gonk-misc" remote="flingone" revision="matchstick-b2g2.1"/>
   <project name="librecovery" path="librecovery" remote="b2g" revision="v2.1"/>
   <project name="moztt" path="external/moztt" remote="b2g" revision="v2.1"/>
   <project name="rilproxy" path="rilproxy" remote="b2g" revision="v2.1"/>
@@ -129,9 +129,9 @@
   <project path="build" name="platform_build" remote="flingone" revision="flingone-kk">
     <copyfile src="core/root.mk" dest="Makefile"/>
   </project>
-  <project path="bootable/recovery" name="bootable-recovery" remote="flingone" revision="flingone-kk"/>
+  <project path="bootable/recovery" name="bootable-recovery" remote="flingone" revision="matchstick-kk"/>
   <project path="device/rockchip/rk3066" name="device-rockchip-rk3066" remote="flingone" revision="flingone-kk"/>
-  <project path="device/rockchip/rk3188" name="device-rockchip-rk3188" remote="flingone" revision="itu1898"/>
+  <project path="device/rockchip/rk3188" name="device-rockchip-rk3188" remote="flingone" revision="itu1898-fling"/>
   <project path="device/rockchip/rksdk" name="device-rockchip-rksdk" remote="flingone" revision="itu1898-fling"/>
   <project path="device/rockchip/common" name="device-rockchip-common" remote="flingone" revision="flingone-kk"/>
   <project path="external/alsa-lib" name="external-alsa-lib" remote="flingone" revision="flingone-kk"/>
@@ -148,7 +148,7 @@
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="flingone" revision="flingone-kk"/>
   <project path="hardware/libhardware_legacy" name="hardware_libhardware-legacy" remote="flingone" revision="flingone-kk"/>
   <project path="hardware/realtek/wlan" name="hardware-realtek-wlan" remote="flingone" revision="flingone-kk"/>
-  <project path="kernel" name="rk3066-kernel" remote="flingone" revision="itu1898"/>
+  <project path="kernel" name="rk3066-kernel" remote="flingone" revision="itu1898-fling"/>
   <project path="patches" name="b2g-patches" remote="flingone" revision="v2.1-kk"/>
   <project path="rockdev" name="rockdev" remote="flingone" revision="itu1898" />
   <project path="rkst" name="rkst" remote="flingone" revision="flingone-kk" />
