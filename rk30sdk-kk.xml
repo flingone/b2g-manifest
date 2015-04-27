@@ -160,6 +160,7 @@
   <!-- matchstick projects -->
   <project path="external/libcurl" name="external_libcurl" remote="flingone" revision="matchstick-kk"/>
   <project path="frameworks/base/cmds/configd" name="frameworks_base_cmds_configd" remote="flingone" revision="matchstick-kk"/>
+  <project path="frameworks/base/cmds/remoted" name="frameworks_base_cmds_remoted" remote="flingone" revision="matchstick-kk"/>
   <project path="frameworks/base/cmds/otad" name="frameworks_base_cmds_otad" remote="flingone" revision="matchstick-kk"/>
   <project path="frameworks/base/cmds/scan_wifi" name="frameworks_base_cmds_scan_wifi" remote="flingone" revision="matchstick-kk"/>
   <project path="frameworks/base/cmds/node" name="node" remote="openflint" revision="matchstick"/>
