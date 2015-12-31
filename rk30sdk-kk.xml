@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <manifest>
 
-  <remote fetch="git://github.com/flingone/" name="flingone" />
+  <remote fetch="https://github.com/flingone/" name="flingone" />
   <remote fetch="https://android.googlesource.com/" name="aosp"/>
   <remote fetch="git://github.com/mozilla-b2g/" name="b2g"/>
   <remote fetch="git://github.com/mozilla/" name="mozilla"/>
@@ -12,10 +12,10 @@
   <default revision="refs/tags/android-4.4.2_r1" remote="caf" sync-j="4"/>
 
   <!-- B2G specific things. -->
-  <project name="gaia" path="gaia" remote="mozillaorg" revision="v2.1"/>
-  <project name="gecko" path="gecko" remote="mozillaorg" revision="v2.1"/>
+  <project name="gaia" path="gaia" remote="flingone" revision="vision-b2g2.1"/>
+  <project name="gecko-dev" path="gecko" remote="flingone" revision="vision-b2g2.1"/>
   <project name="fake-libdvm" path="dalvik" remote="b2g" revision="v2.1"/>
-  <project name="gonk-misc" path="gonk-misc" remote="b2g" revision="v2.1"/>
+  <project name="gonk-misc" path="gonk-misc" remote="flingone" revision="vision-b2g2.1"/>
   <project name="librecovery" path="librecovery" remote="b2g" revision="v2.1"/>
   <project name="moztt" path="external/moztt" remote="b2g" revision="v2.1"/>
   <project name="rilproxy" path="rilproxy" remote="b2g" revision="v2.1"/>
@@ -140,7 +140,7 @@
   <project path="external/rk-pcba-test" name="external_rk-pcba-test" remote="flingone" revision="flingone-kk" />
   <project path="external/sepolicy" name="external_sepolicy" remote="flingone" revision="flingone-kk" />
   <project path="external/wlan_loader" name="external_wlan_loader" remote="flingone" revision="flingone-kk"/>
-  <project path="frameworks/av" name="platform_frameworks_av" remote="flingone" revision="flingone-kk" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="flingone" revision="vision-kk" />
   <project path="frameworks/native" name="frameworks_native" remote="flingone" revision="flingone-kk"/>
   <project path="hardware/rk29" name="hardware-rk29" remote="flingone" revision="flingone-kk"/>
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="flingone" revision="flingone-kk"/>
